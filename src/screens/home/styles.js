@@ -1,0 +1,107 @@
+import {Dimensions, StyleSheet} from 'react-native';
+import {COLORS, FONTS, SIZES} from './../../constants';
+
+export default StyleSheet.create({
+  maincontainer: {
+    flex: 1,
+    backgroundColor: COLORS.white,
+  },
+  innercontainer: {
+    width: SIZES.width * 0.92,
+    alignSelf: 'center',
+    backgroundColor: COLORS.white,
+  },
+  overViewBox: {width: SIZES.width * 0.3, alignItems: 'center'},
+  dateBox: {
+    elevation: 3,
+    borderRadius: 30,
+    width: SIZES.width * 0.1,
+    height: SIZES.height * 0.045,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#F7F7F7',
+    marginBottom: SIZES.height * 0.01,
+  },
+  date: {
+    ...FONTS.sevenHundred,
+    color: '#F08100',
+    fontSize: 16,
+    marginBottom: -4,
+  },
+  title: {
+    ...FONTS.fiveHundred,
+    color: '#F08100',
+    fontSize: 12,
+  },
+  flexRow: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: SIZES.height * 0.01,
+  },
+  leavebox: {
+    width: SIZES.width * 0.92,
+    borderRadius: 8,
+    backgroundColor: '#F7F7F7',
+    paddingHorizontal: SIZES.width * 0.03,
+    borderWidth: 1,
+    borderColor: COLORS.gray10,
+    marginVertical: SIZES.height * 0.01,
+    alignSelf: 'center',
+    justifyContent: 'center',
+  },
+  hour: {
+    ...FONTS.fourHundred,
+    fontSize: 12,
+    color: COLORS.gray50,
+  },
+  dateTimeBlue: {
+    color: COLORS.primary,
+    ...FONTS.sixHundred,
+    fontSize: 18,
+    marginBottom: SIZES.height * -0.02,
+  },
+  statusbox: {
+    backgroundColor: '#D2FAEF',
+    height: SIZES.height * 0.035,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: SIZES.width * 0.2,
+    borderRadius: 6,
+    elevation: 1,
+    marginVertical: SIZES.height * 0.01,
+  },
+  status: {
+    color: '#3A987F',
+    fontSize: 12,
+    ...FONTS.fiveHundred,
+    marginBottom: -2,
+  },
+  modal_Box: {
+    width: SIZES.width * 0.9,
+    borderRadius: 8,
+    backgroundColor: '#F8F5F5',
+    padding: SIZES.width * 0.05,
+    alignSelf: 'center',
+    alignItems: 'center',
+  },
+  Modal_checkout: {
+    ...FONTS.sixHundred,
+    color: '#FF5E5E',
+    fontSize: 18,
+    textAlign: 'center',
+    marginVertical: SIZES.height * 0.02,
+  },
+  modalTime: {
+    ...FONTS.fourHundred,
+    color: COLORS.primary,
+    fontSize: 12,
+    marginVertical: SIZES.height * 0.01,
+  },
+  modalShift: {
+    ...FONTS.fourHundred,
+    color: COLORS.black,
+    fontSize: 11,
+    marginVertical: SIZES.height * 0.02,
+  },
+});

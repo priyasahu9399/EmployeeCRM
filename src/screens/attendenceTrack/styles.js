@@ -1,0 +1,131 @@
+import {StyleSheet} from 'react-native';
+import {COLORS, FONTS, SIZES} from './../../constants';
+
+export default StyleSheet.create({
+  maincontainer: {
+    flex: 1,
+    backgroundColor: '#F7F7F7',
+  },
+  innercontainer: {
+    width: SIZES.width * 0.94,
+    alignSelf: 'center',
+    backgroundColor: '#F7F7F7',
+  },
+  mainHeadBox: {
+    backgroundColor: '#F7F7F7',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: COLORS.gray20,
+    width: SIZES.width * 0.93,
+    alignSelf: 'center',
+    padding: SIZES.width * 0.02,
+    marginVertical: SIZES.height * 0.02,
+    alignSelf: 'center',
+  },
+  rowDot: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    marginTop: SIZES.height * 0.02,
+  },
+  Dot: {
+    backgroundColor: '#EA462F',
+    width: SIZES.width * 0.026,
+    height: SIZES.height * 0.012,
+    borderRadius: 10,
+    marginRight: SIZES.width * 0.01,
+  },
+  DotText: {
+    ...FONTS.fourHundred,
+    fontSize: 12,
+    color: COLORS.black,
+    marginBottom: -2,
+  },
+  Overview: {
+    ...FONTS.sixHundred,
+    fontSize: 18,
+    color: COLORS.black,
+    margin: SIZES.width * 0.02,
+  },
+  rownumber: {
+    flexDirection: 'row',
+  },
+  number: {
+    ...FONTS.sixHundred,
+    fontSize: 16,
+    color: COLORS.black,
+    width: SIZES.width * 0.43,
+    textAlign: 'center',
+  },
+  switchText: {
+    ...FONTS.fiveHundred,
+    fontSize: 12,
+    color: COLORS.black,
+    marginBottom: -2,
+    width: SIZES.width * 0.25,
+    textAlign: 'center',
+    // borderWidth:1,
+    // alignItems: 'flex-start',
+  },
+
+  flexRowswitch: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 1,
+    borderColor: COLORS.gray10,
+    backgroundColor: COLORS.white,
+    height: SIZES.height * 0.062,
+    borderRadius: 8,
+    marginVertical: SIZES.height * 0.02,
+    width: SIZES.width * 0.93,
+    alignSelf: 'center',
+  },
+  btnStyle: {
+    backgroundColor: COLORS.primary,
+    width: SIZES.width * 0.9,
+    alignSelf: 'center',
+    marginVertical: SIZES.height * 0.025,
+  },
+  timeIcon: {
+    width: SIZES.width * 0.04,
+    height: SIZES.height * 0.02,
+    resizeMode: 'contain',
+    tintColor: COLORS.gray30,
+    paddingHorizontal: SIZES.width * 0.03,
+  },
+  stepRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  steplabel: {
+    color: COLORS.black,
+    ...FONTS.sixHundred,
+    fontSize: 13,
+    marginBottom: -3,
+    paddingLeft: SIZES.width * 0.03,
+  },
+  hrs: {
+    color: COLORS.black,
+    ...FONTS.fourHundred,
+    fontSize: 11,
+    marginBottom: -4,
+  },
+  stepLabelBox: {
+    height: SIZES.height * 0.09, //1 + == stepheight +4
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  StepIndicatorBox: {
+    height: SIZES.height * 0.39,
+    justifyContent: 'center',
+    backgroundColor: '#F7F7F7',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: COLORS.gray20,
+    width: SIZES.width * 0.93,
+    alignSelf: 'center',
+    marginVertical: SIZES.height * 0.03,
+    paddingLeft: SIZES.width * 0.1,
+  },
+});
